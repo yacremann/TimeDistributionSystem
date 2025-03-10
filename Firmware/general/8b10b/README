@@ -1,0 +1,3 @@
+This part implements the 8b10b encoder / decoder for the time distribution system.
+It is implemented in SpinalHDL (https://github.com/SpinalHDL/SpinalHDL) and
+converted into the Verilog files using sbt.

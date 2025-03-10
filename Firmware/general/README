@@ -1,0 +1,20 @@
+These components are often used by both, the receiver and transmitter (or by the receiver included in the framegrabber or digitizer).
+
+8b10b: 8b 10b encoder / decoder
+async_fifo: Async FIFO from https://github.com/dpretet/async_fifo (Copyright 2017 Damien Pretet ThotIP; See Github repo)
+APB: Implementation of the APB bus and bus registers in SystemVerilog using interfaces.
+CRC: CRC generator from https://github.com/hellgate202/crc_calc (Leonid Ivanov)
+FrameReceiver: The receiver for decoding a data frame
+FrequencyCounter: Used to measure the frequency of the laser oscillator
+PayloadTransmitter: Prepares a data frame for serialization. It also calculates the CRC and performs 8b10b encoding.
+protocol: The include file defining the data structure of a data frame
+pulse_extender: Used to make the LEDs blink long enough in case of an error
+SlowLink: Implements the slow transmitter (for sending data to the framegrabber) as well as CDR for the receiver in the framegrabber
+Softcore: Microcontroller based on the VexRISCV CPU running on teh transmitter and receiver
+Trigger: Circuit to generate the trigger sgnals at the output of the receiver
+watchdog: Simple watchdog circuit to reset the receiver in case of a sequence of errors
+FIFO: Fifo to cross clock domain boundaries (Copyright 2018 ETH Zurich and University of Bologna, https://github.com/pulp-platform/common_cells)
+
+Most modules include a test bench using Cocotb and Verilator. These can be run using the Makefiles.
+
+tinyduino_lib: Drivers for the components of the softcore (from Dominic Wüthrich, 2021)

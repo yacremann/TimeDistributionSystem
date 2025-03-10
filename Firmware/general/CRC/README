@@ -1,0 +1,2 @@
+This CRC calculator is taken from https://github.com/hellgate202/crc_calc.git.
+It is modified by Yves Acremann in order to be compatible with verilator.

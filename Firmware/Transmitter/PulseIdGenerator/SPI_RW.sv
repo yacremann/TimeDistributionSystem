@@ -1,0 +1,1 @@
+../MRAM/SPI_RW.sv

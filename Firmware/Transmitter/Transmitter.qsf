@@ -1,0 +1,172 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+# Date created = 09:00:52  Januar 06, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		DriverRiscv_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M16SCE144C8G
+set_global_assignment -name TOP_LEVEL_ENTITY Top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:00:52  JANUAR 06, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
+set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name EXTERNAL_FLASH_FALLBACK_ADDRESS 00000000
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE IMAGE"
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE output_files/stp1.stp
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_114 -to GPIO[0]
+set_location_assignment PIN_118 -to GPIO[1]
+set_location_assignment PIN_119 -to GPIO[2]
+set_location_assignment PIN_120 -to GPIO[3]
+set_location_assignment PIN_124 -to GPIO[4]
+set_location_assignment PIN_127 -to GPIO[5]
+set_location_assignment PIN_130 -to GPIO[6]
+set_location_assignment PIN_131 -to GPIO[7]
+set_location_assignment PIN_132 -to GPIO[8]
+set_location_assignment PIN_135 -to GPIO[9]
+set_location_assignment PIN_140 -to GPIO[10]
+set_location_assignment PIN_141 -to GPIO[11]
+set_location_assignment PIN_86 -to reset_n
+set_location_assignment PIN_88 -to clk
+set_instance_assignment -name IO_STANDARD "1.8 V" -to reset_n
+
+
+
+set_location_assignment PIN_85 -to M0
+set_location_assignment PIN_81 -to M1
+set_location_assignment PIN_78 -to M2
+set_location_assignment PIN_77 -to SPI_Timer_CSB
+set_location_assignment PIN_75 -to SPI_Timer_SCLK
+set_location_assignment PIN_76 -to SPI_Timer_SDI
+set_location_assignment PIN_74 -to SPI_Timer_SDO
+set_instance_assignment -name IO_STANDARD "1.8 V" -to M0
+set_instance_assignment -name IO_STANDARD "1.8 V" -to M1
+set_instance_assignment -name IO_STANDARD "1.8 V" -to M2
+set_instance_assignment -name IO_STANDARD "1.8 V" -to SPI_Timer_CSB
+set_instance_assignment -name IO_STANDARD "1.8 V" -to SPI_Timer_SCLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to SPI_Timer_SDI
+set_instance_assignment -name IO_STANDARD "1.8 V" -to SPI_Timer_SDO
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to GPIO
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to clk
+set_location_assignment PIN_65 -to MRAM_CSn
+set_location_assignment PIN_66 -to MRAM_HOLDn
+set_location_assignment PIN_69 -to MRAM_SCK
+set_location_assignment PIN_70 -to MRAM_SI
+set_location_assignment PIN_64 -to MRAM_SO
+set_location_assignment PIN_62 -to MRAM_WPn
+set_location_assignment PIN_106 -to sync
+set_location_assignment PIN_27 -to clk_80_Mhz
+set_instance_assignment -name IO_STANDARD LVDS -to clk_80_Mhz
+set_location_assignment PIN_26 -to "clk_80_Mhz(n)"
+set_location_assignment PIN_90 -to tclkr
+set_location_assignment PIN_91 -to to_serializer[9]
+set_location_assignment PIN_92 -to to_serializer[8]
+set_location_assignment PIN_96 -to to_serializer[7]
+set_location_assignment PIN_93 -to to_serializer[6]
+set_location_assignment PIN_99 -to to_serializer[5]
+set_location_assignment PIN_98 -to to_serializer[4]
+set_location_assignment PIN_100 -to to_serializer[3]
+set_location_assignment PIN_101 -to to_serializer[2]
+set_location_assignment PIN_102 -to to_serializer[1]
+set_location_assignment PIN_105 -to to_serializer[0]
+set_location_assignment PIN_60 -to slow_pulse_id
+set_location_assignment PIN_38 -to RX
+set_location_assignment PIN_39 -to TX
+set_location_assignment PIN_50 -to led1
+set_location_assignment PIN_52 -to led2
+set_location_assignment PIN_54 -to led3
+set_global_assignment -name SYSTEMVERILOG_FILE ../general/PayloadTransmitter/PayloadTransmitter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../general/FrequencyCounter/synchronizer.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../general/FrequencyCounter/gray.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../general/FrequencyCounter/FrequencyCounter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../general/protocol/data_frames.sv
+set_global_assignment -name VERILOG_FILE ../general/async_fifo/src/vlog/wptr_full.v
+set_global_assignment -name VERILOG_FILE ../general/async_fifo/src/vlog/sync_w2r.v
+set_global_assignment -name VERILOG_FILE ../general/async_fifo/src/vlog/sync_r2w.v
+set_global_assignment -name VERILOG_FILE ../general/async_fifo/src/vlog/sync_ptr.v
+set_global_assignment -name VERILOG_FILE ../general/async_fifo/src/vlog/rptr_empty.v
+set_global_assignment -name VERILOG_FILE ../general/async_fifo/src/vlog/fifomem_dp.v
+set_global_assignment -name VERILOG_FILE ../general/async_fifo/src/vlog/fifo_2mem.v
+set_global_assignment -name VERILOG_FILE ../general/async_fifo/src/vlog/async_fifo.v
+set_global_assignment -name VERILOG_FILE ../general/async_fifo/src/vlog/async_bidir_ramif_fifo.v
+set_global_assignment -name VERILOG_FILE ../general/async_fifo/src/vlog/async_bidir_fifo.v
+set_global_assignment -name SYSTEMVERILOG_FILE PulseIdGenerator/PayloadTransmitter.sv
+set_global_assignment -name SYSTEMVERILOG_FILE PulseIdGenerator/data_frames.sv
+set_global_assignment -name SYSTEMVERILOG_FILE pulse_extender.sv
+set_global_assignment -name VERILOG_FILE PulseIdGenerator/Encode_8b10b.v
+set_global_assignment -name SYSTEMVERILOG_FILE PulseIdGenerator/crc_calc.sv
+set_global_assignment -name SYSTEMVERILOG_FILE PulseIdGenerator/PulseIdGenerator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE MRAM/SPI_RW.sv
+set_global_assignment -name SYSTEMVERILOG_FILE MRAM/MRAM.sv
+set_global_assignment -name VERILOG_FILE Softcore/VexRISCVSoftcore.v
+set_global_assignment -name SYSTEMVERILOG_FILE APB/ApbBus.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Top.sv
+set_global_assignment -name QIP_FILE ROM/synthesis/ROM.qip
+set_global_assignment -name SDC_FILE Timing.sdc
+set_global_assignment -name SOURCE_FILE Spf2.spf
+set_location_assignment PIN_33 -to trigger_100_hz_i
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

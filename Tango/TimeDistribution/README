@@ -1,0 +1,4 @@
+This is the Tango device server to control the time distribution
+system through the USB port of the transmitter. It allows for 
+configuring the receiver and setting the parameters of the
+trigger outputs of the receivers.

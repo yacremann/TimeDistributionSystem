@@ -1,0 +1,6 @@
+The Softcore uses the VexRISCV processor from the SpinalHDL project by Charles Papon
+(https://github.com/SpinalHDL/VexRiscv) and builds a microcontroller that runs from the ROM of the MAX10 FPGA.
+
+The microcontroller is available in the output file VexRISCVSoftcore.v and provides an APB master bus to control the 
+components of the time distribution system.
+

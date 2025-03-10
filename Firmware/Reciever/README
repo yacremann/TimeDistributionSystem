@@ -1,0 +1,8 @@
+This is tor firmware of the receiver. It includes the receiver (describend in SystemVerilog) as well as the software running on the softcore.
+
+To build it:
+    * Modify build.sh to match the path to Quartus 23
+    * Modify the makefiles of Sortware and Software/tinyduino_lib to match the localtion of gcc for the RiscV 32IM.
+    * Run build.sh
+
+

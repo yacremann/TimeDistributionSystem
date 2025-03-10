@@ -1,0 +1,18 @@
+This is the software running on the softcore of the receiver. It provides a debugging interface over UART and configures the AD9544 PLLs.
+
+AD9544_config: Configuration file for the AD9544 PLL
+config_to_array.py: Convert the AD9544 configuration to ad9544_regs.h used for configuration.
+io.h: Addresses of the registers (adaptecd from the tinyduino proect)
+
+
+Tool chain needed:
+==================
+
+gcc for Riscv:
+--------------
+Compile gcc for riscv according to https://github.com/SpinalHDL/VexRiscv on a different Linux machine (takes time and space!!)
+copy the files in /opt/rviscv32/ to the virtual machine
+
+bin2hex:
+--------
+pip3 install intelhex

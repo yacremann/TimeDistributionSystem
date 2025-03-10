@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Package_BGA2)(type KiCad)(uri /home/jingo/Dokumente/TimeDistribution/TimeDistribution/Boards/Transmitter/Package_BGA_2.pretty)(options "")(descr ""))
+  (lib (name footprint)(type KiCad)(uri /home/jingo/Dokumente/TimeDistribution/TimeDistribution/Boards/Transmitter/footprint)(options "")(descr ""))
+)

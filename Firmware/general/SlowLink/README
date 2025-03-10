@@ -1,0 +1,3 @@
+This code implements the slow link between the receiver box and the receiver on the custom configurable FPGA on the frame grabber / digitizer.
+
+It also contains test benches for simulating the CRD loop (50 MHz, 250 MHz and 312 MHz clock frequency) using Cocotb and Verilator.
