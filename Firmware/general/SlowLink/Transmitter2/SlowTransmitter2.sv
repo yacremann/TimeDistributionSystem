@@ -3,7 +3,7 @@
     Slow transmitter (between the receiver and the frame grabber / digitizer) of the 
     time distribution system
 
-    Copyright (C) 2025, Yves Acremann, ETH Zurich
+    Copyright (C) 2025, ETH Zurich, Yves Acremann, D-PHYS; Laboratory for Solid State Physics; Eduphys
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

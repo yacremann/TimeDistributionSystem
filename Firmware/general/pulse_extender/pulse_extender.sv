@@ -2,7 +2,7 @@
 
     This module implements a simple pulse extender for the time distribution system.
 
-    Copyright (C) 2025, Yves Acremann, ETH Zurich
+    Copyright (C) 2025, ETH Zurich, Yves Acremann, D-PHYS; Laboratory for Solid State Physics; Eduphys
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

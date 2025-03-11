@@ -2,7 +2,7 @@
 
     This is an implementation of the APB-bus in SystemVerilog using interfaces.
 
-    Copyright (C) 2021, Yves Acremann, ETH Zurich
+    Copyright (C) 2022, ETH Zurich, Yves Acremann, D-PHYS; Laboratory for Solid State Physics; Eduphys
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

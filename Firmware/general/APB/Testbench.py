@@ -2,7 +2,7 @@
 
     This is the Cocotb test bench of the APB-bus.
 
-    Copyright (C) 2021, Yves Acremann, ETH Zurich
+    Copyright (C) 2022, ETH Zurich, Yves Acremann, D-PHYS; Laboratory for Solid State Physics; Eduphys
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
